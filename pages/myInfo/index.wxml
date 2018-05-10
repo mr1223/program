@@ -1,0 +1,29 @@
+
+
+
+<view class='my-about'>
+  <view class='about'>
+    <rich-text nodes="{{nodes}}"></rich-text>
+  </view>
+</view>
+
+<view>
+  <bottom></bottom>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

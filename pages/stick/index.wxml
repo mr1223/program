@@ -1,0 +1,14 @@
+
+
+<view class='index-card-content'>
+  <card list="{{cardList}}"></card>
+</view>
+
+
+<view>
+  <bottom></bottom>
+</view>
+
+
+
+

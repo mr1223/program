@@ -1,0 +1,11 @@
+
+
+<view class='index-card-content'>
+  <details list="{{list}}" comment="{{comment}}" article="{{article}}"></details>
+</view>
+
+
+
+
+
+

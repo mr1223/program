@@ -1,0 +1,24 @@
+
+.my-about {
+  background: #fff;
+}
+
+.about {
+  margin: 0 auto;
+  width: 94%;
+}
+.about image {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

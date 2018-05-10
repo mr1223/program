@@ -1,0 +1,19 @@
+
+
+
+<view class='assort'>
+  <view bindtap='getData' data-index="{{index}}" data-method="{{item.method}}" class="assort-table {{item.active ? 'active' : ''}}" wx:for="{{table}}" wx:key="{{item.id}}">{{item.name}}</view>
+</view>
+
+<view class='list'>
+    <card list="{{assortBarLists}}"></card>
+    <card list="{{assortList}}"></card>
+</view>
+
+
+
+
+
+
+
+

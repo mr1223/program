@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bottom": "/component/bottom/index",
+    "card": "/component/card/index"
+  },
+  "navigationBarTitleText": "帖子列表"
+}

@@ -1,0 +1,34 @@
+<view class='userinfo'>
+  <view class="userinfo-content">
+      <view class='user-image'>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+      
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  
+</view>
+<view class='myInfo'>
+  <text bindtap='goRoute' data-index="{{index}}" wx:for="{{list}}" wx:key="{{item}}" class='myInfo-stick {{item.active}}'>{{item.name}}</text>
+</view>
+<view class=''>
+  <button class='myinfo-btn' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 退出登录 </button>
+</view>
+
+
+
+
+
+
+<view>
+  <bottom></bottom>
+</view>
+
+
+
+
+
+
+
+

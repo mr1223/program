@@ -1,0 +1,36 @@
+<view class='card' bindtap='goRoute' data-id="{{item.id}}" wx:for="{{list.content}}" wx:key="{{item.id}}">
+  <view class='card-right'>
+    <image src="{{item.image}}"></image>
+  </view>
+  <view class='card-left'>
+    
+    <text class='card-title'>《{{item.title}}》</text>
+    <text class='card-bar' wx:if="{{item.bar  != 1 }}">置顶</text>
+
+    <!-- <text wx:if="{{item.abstract}}">{{item.abstract}}</text> -->
+    <rich-text class='card-con' nodes="{{item.content}}" bindtap="tap"></rich-text> 
+    
+  </view>
+  <view class='card-message'>
+    <view class='card-user'>
+      <image src="{{item.userimage}}"></image>
+    </view>
+    <view class='card-list'>
+      <view class='card-countList'>
+        <text>{{item.user}}</text> 发布在      <text>{{item.name}}</text>
+      </view>
+      <view class='card-countList'>
+        <text>{{item.create_time}}</text>
+        <view class='card-count'>
+          <i class="iconfont icon-count"></i>
+          <text class='card-num'>{{item.count}}</text>
+        </view>
+        <view class='card-count'>
+          <i class="iconfont icon-pinglun"></i>
+          <text class='card-num'>{{item.comments}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style='clear:both;'></view>
+</view>

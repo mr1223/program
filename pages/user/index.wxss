@@ -1,0 +1,65 @@
+
+.userinfo {
+  background: #fff;
+  padding: 24rpx 0;
+  border-bottom: solid 1rpx #ccc;
+}
+.userinfo-content {
+  display: block;
+  margin: 0 auto;
+  width: 94%;
+}
+.user-image {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+}
+.user-image image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.userinfo-nickname {
+  display: inline-block;
+  margin-left: 24rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+.myInfo {
+  display: block;
+  margin-top: 12rpx;
+  background: #fff;
+}
+.myInfo-stick {
+  display: block;
+  padding: 24rpx 0;
+  margin: 0 auto;
+  width: 94%;
+  font-size: 32rpx;
+  border-bottom: solid 1rpx #ccc;
+}
+.myInfo-active {
+  border: 0;
+}
+
+.myinfo-btn[type=primary] {
+  margin: 0 auto;
+  margin-top: 240rpx;
+  width: 80%;
+  background: #f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

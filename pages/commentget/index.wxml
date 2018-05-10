@@ -1,0 +1,30 @@
+
+
+<view class='comment-send'>
+  <view class='comment-list' wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class='comment-title'>
+      <image src="{{item.avatarurl}}"></image>
+    </view>
+    <view class='comment-header'>
+      <text class='comment-header-reply' wx:if="{{item.pid > 0}}">{{item.nickname}}回复了你</text>  
+      <text class='comment-header-reply' wx:if="{{item.pid < 1}}">你评论了   《{{item.title}}》</text>
+      <text class='comment-header-time'>{{item.create_time}}</text>
+      <!-- <text class='comment-del' data-id='{{}}'>回复</text> -->
+    </view>
+    <view style='clear:both;'></view>
+    <view class='comment-content'>
+      {{item.content}}
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+

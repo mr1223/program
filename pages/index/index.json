@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bottom": "/component/bottom/index",
+    "nav": "/component/nav/index",
+    "card": "/component/card/index"
+  },
+  "navigationBarTitleText": "天通圈子"
+}

@@ -1,0 +1,14 @@
+
+<view class="bottom-content">
+  <view class='bottom-nav {{item.active ? "bottom-nav-active" : ""}}' wx:for="{{list}}" data-index="{{index}}" bindtap='goRoute'  wx:key="{{item.name}}">
+      <view class='content-image {{item.center ? "bottom-center" : ""}}'>
+        <i class="iconfont iconNav {{item.icon}}"></i>
+        <text wx:if="{{item.center}}" class='content-background'></text>
+        <text class='content-text {{item.center ? "content-center" : ""}}'>{{item.name}}</text>
+      </view>
+    </view>
+</view>
+
+
+
+

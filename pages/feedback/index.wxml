@@ -1,0 +1,9 @@
+
+<view class='feedback'>
+ <textarea value='{{textarea}}' bindinput="textareaChange" placeholder='请输入您的意见、建议和联系方式，我们会尽快与您联系' class='textarea' auto-height></textarea>
+ 
+</view>
+<view class='feedback-btn'>
+  <button bindtap='save' type='primary' class='feedback-sub'>提交</button>
+</view>
+

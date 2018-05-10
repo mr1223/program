@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<!--
+<view class="search {{ searchActive == true ? 'search-active': '' }}">
+  <input class='search-content' placeholder="{{place}}" type="text" confirm-type="search" />
+  <i class='iconfont search-icon icon-search'></i>
+</view>
+-->
+<swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<nav list="{{navList}}"></nav>
+
+<view class='index-card-content'>
+  <card list="{{barList}}"></card>
+  <card list="{{cardList}}"></card>
+</view>
+
+
+
+
+<view bindtap='getUserMessage'>
+  点击获取登录信息测试
+</view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<view>
+  
+</view>
+<bottom></bottom>

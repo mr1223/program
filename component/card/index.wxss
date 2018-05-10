@@ -1,0 +1,132 @@
+
+@import '/lib/style/css/iconfont/iconfont.wxss';
+
+.card {
+  padding: 26rpx 40rpx; 
+  display: block;
+  background: #fff;
+  cursor: pointer;
+  border-bottom: solid 1rpx #f5f5f5;
+}
+.card-right {
+  float: left;
+  margin-right: 32rpx;
+  width: 182rpx;
+  height: 182rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.card-right image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-left {
+  float: left;
+  width: 461rpx;
+}
+.card-title {
+  float: left;
+  width: 350rpx;
+  height: 54rpx;
+  color: #000;
+  font-size: 36rpx;
+  font-weight: 500;
+  isplay: -webkit-box; 
+  text-overflow: ellipsis;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.card-bar {
+  float: left;
+  margin-left: 22rpx;
+  padding: 8rpx 18rpx;
+  border: solid 1rpx #f00;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  font-weight: 600;
+  color: #f00;
+}
+.card-con {
+  clear: both;
+  display: block;
+  padding-top: 8rpx;
+  height: 122rpx;
+  overflow: hidden;
+  color:#999999;
+  font-size: 30rpx;
+  line-height: 1.5;
+  isplay: -webkit-box; 
+  text-overflow: ellipsis;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.card-xian {
+  clear: both;
+}
+.card-message {
+  display: block;
+  width: 100%;
+  height: 92rpx;
+  padding-top: 16rpx;
+  overflow: hidden;
+  color:#999999;
+  font-family:PingFangSC-Regular;
+  font-size: 30rpx;
+  text-align: left;
+}
+.card-user {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.card-user image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-list {
+  float: left;
+  width: 568rpx;
+  margin-left: 24rpx;
+}
+.card-countList {
+  margin-top: 4rpx;
+}
+.card-name {
+  display: block;
+}
+.card-count {
+  float: right;
+  margin-left: 20rpx;
+  color: #999999;
+}
+.iconfont {
+  margin-right: 8rpx;
+  font-size: 24rpx;
+  color: #cacaca;
+}
+.icon-pinglun {
+  font-size: 32rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

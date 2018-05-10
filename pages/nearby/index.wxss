@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+.nearby {
+  width: 100%;
+}
+.nearby-list {
+  margin-bottom: 12rpx;
+  padding: 12rpx;
+  background: #fff;
+}
+.nearby-title {
+
+}
+.nearby-title image {
+
+}
+.nearby-content {
+  padding: 24rpx 0 12rpx 0;
+}
+.nearby-content-list {
+  display: inline-block;
+  margin: 0 10rpx 24rpx 14rpx;
+  padding: 12rpx 0;
+  width: 156rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border: solid 1rpx #ccc;
+  border-radius: 8rpx;
+  text-align: center;
+  overflow: hidden;
+}

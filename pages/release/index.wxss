@@ -1,0 +1,119 @@
+
+
+.release {
+ 
+}
+.releaseList {
+  position: relative;
+  display: block;
+  padding-bottom: 15rpx;
+  padding: 12rpx 40rpx 0 40rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  clear: both;
+  background: #fff;
+  font-size: 30rpx;
+}
+.release-content {
+  height: 67rpx;
+  padding-right: 180rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.release-numbers {
+  position: absolute;
+  right: 40rpx;
+  top: 9rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.release-select {
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.release-textarea {
+  height: auto;
+  padding-bottom: 30rpx; 
+}
+.textarea {
+  width: 666rpx;
+  min-height: 240rpx;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+  line-height: 1.6;
+  border-radius: 4rpx;
+}
+.release-image {
+  height: auto;
+  clear: both;
+}
+.releaseBottom {
+  display: block;
+  margin-top: 12rpx;
+}
+.icon-shangchuantupian {
+  margin-left: 15rpx;
+  font-size: 92rpx;
+  color: #dcdcdc;
+}
+.release-image image {
+  width: 110rpx;
+  height: 110rpx;
+  margin:0 24rpx 0 2rpx;
+}
+.release-toast {
+  display: block;
+  color: #dcdcdc;
+  font-size: 28rpx;
+}
+.release-select-content {
+  height: 67rpx;
+  display: block;
+  border-bottom: 1rpx #f5f5f5 solid;
+  margin-bottom: 12rpx;
+}
+.release-select {
+  float: right;
+}
+.content-clear {
+  clear: both;
+}
+
+.release-location {
+  
+}
+.address {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 6rpx;
+  width: 690rpx;
+  height: auto;
+  font-size: 32rpx;
+}
+.icon-map {
+  float: left;
+  font-size: 45rpx;
+  background: #fff;
+}
+.release-add {
+  float: left;
+  margin-left: 12rpx;
+  height: 67rpx;
+  line-height: 67rpx;
+}
+
+.release-btn {
+  margin-top: 110rpx;
+  padding-bottom: 99rpx;
+}
+.release-sub[type='primary'] {
+  border-radius: 0;
+  background: #f00;
+  font-family:PingFangSC-Regular;
+}
+
+
+
+
+
+
+
+

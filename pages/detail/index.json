@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "card": "/component/card/index",
+    "details": "/component/details/index"
+  },
+  "navigationBarTitleText": "帖子详情"
+}

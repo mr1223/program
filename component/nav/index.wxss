@@ -1,0 +1,27 @@
+swiper {
+  height: 340rpx;
+}
+.nav {
+  padding: 26rpx 35rpx 0 35rpx; 
+  background: #fff;
+}
+.content {
+ float: left;
+  width: 20%;
+  height: 150rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: "微软雅黑","arial, helvetica, sans-serif";
+}
+.content-image {
+  margin: 0 auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content-image image {
+  max-width: 100%;
+  max-height: 100%;
+}
+

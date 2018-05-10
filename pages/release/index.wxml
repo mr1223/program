@@ -1,0 +1,40 @@
+<view class='release'>
+  <view class='releaseList'>
+    <input value='{{title}}' bindinput="inputTitle" class='release-content' placeholder='标题' type='text' confirm-type='done'></input>
+    <text class='release-numbers'>0~200字之间</text>
+  </view>
+  <view class='releaseList'>
+    <input value='{{phone}}' bindinput="inputPhone" class='release-content' placeholder='联系方式' type='text' confirm-type='done'></input>
+  </view>
+  <view class='releaseList release-textarea'>
+    <textarea maxlength='999999' value='{{textareaValue}}' bindinput="textareaChange" placeholder='内容' class='textarea' auto-height></textarea>
+  </view>
+  <view class='releaseList release-image'>
+    <image wx:for="{{imageList}}" wx:key="{{item}}" src='{{item}}'></image>
+    <i bindtap="addImages" class="iconfont icon-shangchuantupian"></i>
+    <text class='release-toast'>最多上传9张图片</text>
+    <view class='content-clear'></view>
+  </view>
+  <view class='releaseList releaseBottom'>
+    <view class='release-select-content'>
+      <text>将内容发布到</text>
+      <picker class='release-select' bindchange="bindPickerChange" range="{{array}}" value="{{index}}" range-key="name">
+        <view>
+          {{array[indexs]['name']}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view bindtap="getPosition" class='releaseList release-location'>
+    <i class="iconfont icon-map"></i>
+    <text class='release-add'>点击添加位置</text>
+  </view>
+  <view class='releaseList address'>{{location.address}}</view>
+  <view class='release-btn'>
+    <button bindtap='save' type='primary' class='release-sub'>确认发布</button>
+  </view>
+</view>
+
+<view>
+  <bottom></bottom>
+</view>

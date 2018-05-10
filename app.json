@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/assort/index",
+    "pages/nearby/index",
+    "pages/release/index",
+    "pages/user/index",
+    "pages/stick/index",
+    "pages/detail/index",
+    "pages/myInfo/index",
+    "pages/commentget/index",
+    "pages/commentsend/index",
+    "pages/feedback/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "debug": true
+}

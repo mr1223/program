@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "card": "/component/card/index"
+  }
+}

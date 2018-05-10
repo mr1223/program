@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class='nearby'>
+  <view class='nearby-list' wx:for="{{list.content}}" wx:key="{{item.id}}">
+    <view class='nearby-title'>
+      <i class="iconfont {{item.icon}}"></i>
+      <text>{{item.title}}</text>
+    </view>
+    <view class='nearby-content'>
+      <view class='nearby-content-list' wx:for="{{item.chren}}" wx:for-item="content" wx:key="{{content.id}}">
+        {{content.name}}
+      </view>
+     
+    </view>
+  </view>
+</view>
+
+
+
+
+<bottom></bottom>
+

@@ -1,0 +1,14 @@
+<swiper class='nav' indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{list}}" wx:key="{{item.id}}">
+    <swiper-item>
+      <view class='content' bindtap='goRoute' data-id="{{content.id}}" data-name="{{content.name}}" wx:for="{{item.content}}" wx:key="{{content.id}}" wx:for-item="content">
+        <view class='content-image'>
+          <image src="{{content.image}}"></image>
+        </view>
+        <text class='content-text'>{{content.name}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+

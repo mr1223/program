@@ -1,0 +1,29 @@
+
+
+page {
+  background: #f5f5f5;
+}
+.feedback {
+  padding: 12rpx;
+}
+.textarea {
+  padding: 18rpx;
+  width: 695rpx;
+  min-height: 320rpx;
+  background: #fff;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+}
+.feedback-btn {
+  margin-top: 230rpx;
+}
+.feedback-sub[type="primary"] {
+  background: #f00;
+  border-radius: 0;
+}
+
+
+
+
+
+

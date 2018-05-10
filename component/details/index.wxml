@@ -1,0 +1,83 @@
+<view class='detail'>
+  <view class='detail-title'>
+    <view class='detail-avatarurl'>
+      <image src="{{list.avatarurl}}"></image>
+    </view>
+    <view class='detail-user'>
+      <text class='detail-text detail-username'>{{list.username}}</text>
+      <view class='detail-textContent'>
+        <text class='detail-time'>{{list.create_time}}</text>
+       发布在      <text class='detail-name'>{{list.name}}</text>
+      </view>
+      
+    </view>
+    <view class='detail-contact'>
+      <text wx:if='{{list.phone}}' bindtap='contact' data-phone='{{list.phone}}'>联系他</text>
+    </view>
+    <view style='clear:both;'></view>
+  </view>
+  <view class='detailCon'>
+    <text class='detail-abstract' wx:if='{{list.abstract}}'>摘要：{{list.abstract}}</text>
+    <view>
+      <rich-text nodes="{{list.content}}" class='detail-content'>
+        
+      </rich-text>
+    </view>
+    <view wx:if="{{list.imageslist}}"  class='detailImageList'>
+        <image src='{{item}}' wx:key="{{list.imageslist}}" wx:for="{{list.imageslist}}" ></image>
+    </view>
+    <view wx:if='{{list.address}}' class='detail-localtion'>
+      <i class="iconfont icon-map"></i>：{{list.address}}
+    </view>
+    <view bindtap='addArtPraise' class='detail-praise'>
+      <i class="iconfont icon-dianzan-copyx icon-article {{list.praise > -1 ? 'praise-active' : ''}}"></i>
+    </view>
+  </view>
+  <view  wx:if='{{article.content.length > 0}}'>
+    <view class='detail-link'>
+      <i class="iconfont icon-lianjie_icon"></i>
+      <text class='detail-artcle'>相关文章</text>
+      <view style='clear:both;'></view>
+    </view>
+    <card list="{{article}}"></card>
+  </view>
+  <view wx:if="{{comment.length > 0}}">
+    <view class='detail-comment'>
+      <text>全部评论：</text>
+    </view>
+    <view class='comment'>
+       <view class='comment-list' wx:for="{{comment}}" wx:key="{{item.nickname}}">
+          <view class='detail-avatarurl'>
+            <image src="{{item.avatarurl}}"></image>
+          </view>
+          <view class='comment-title'>
+            <text class='comment-name'>{{item.nickname}}</text>
+            <view class='comment-parent' wx:if="{{item.parent}}">
+              <text class='comment-parent-name'>{{item.parent.nickname}}</text>
+              <text class='comment-parent-content'>{{item.parent.content}}</text>
+            </view>
+            <view class='comment-content'>{{item.content}}</view>
+            <text bindtap='replys' data-name='{{item.nickname}}' data-pid='{{item.id}}' class='comment-reply'>回帖</text>
+            <view style='clear:both;'></view>
+          </view>
+          <view class='comments'>
+            <text class='comment-name comment-time'>{{item.create_time}}</text>
+            <view bindtap='addCommentPraise' data-pid='{{item.id}}' data-pid='{{item.id}}' data-praise='{{item.praise}}'  data-praisenum='{{item.praisenum}}' data-index='{{index}}'  class='icon-comment-content'>
+              <i class="iconfont icon-dianzan-copyx icon-comment {{item.praise > -1 ? 'praise-active' : ''}}"></i>
+              {{item.praisenum}}
+            </view>
+            
+          </view>
+       </view>
+    </view>
+      
+  </view>
+  <view class='detail-bg'></view>
+  <view class='detail-reply'>
+    <view>
+      <input value='{{content}}' bindinput="inputTitle" class='detail-reply-input' placeholder='回复内容' type='text' confirm-type='done'></input>
+      <text bindtap='commentSub' data-id = "{{list.id}}" class='detail-reply-btn'>回帖</text>
+    </view>
+  </view>
+  <view style='clear:both;'></view>
+</view>
