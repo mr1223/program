@@ -3,7 +3,11 @@
   <block wx:for="{{list}}" wx:key="{{item.id}}">
     <swiper-item>
       <view class='content' bindtap='goRoute' data-id="{{content.id}}" data-name="{{content.name}}" wx:for="{{item.content}}" wx:key="{{content.id}}" wx:for-item="content">
-        <view class='content-image'>
+        <view  wx:if="{{content.icon}}" class='content-image' style="background: #{{content.color}};">
+          <!--<image src="{{content.image}}"></image>-->
+          <i class="iconfont {{content.icon}}" style='{{content.style}}'></i>
+        </view>
+        <view  wx:if="{{!content.icon}}" class='content-image'>
           <image src="{{content.image}}"></image>
         </view>
         <text class='content-text'>{{content.name}}</text>

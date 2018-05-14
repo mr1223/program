@@ -1,6 +1,6 @@
 
 <view class="bottom-content">
-  <view class='bottom-nav {{item.active ? "bottom-nav-active" : ""}}' wx:for="{{list}}" data-index="{{index}}" bindtap='goRoute'  wx:key="{{item.name}}">
+  <view bindtap='goRoute' class='bottom-nav {{item.active ? "bottom-nav-active" : ""}}' wx:for="{{list}}" data-index="{{index}}" wx:key="{{item.name}}">
       <view class='content-image {{item.center ? "bottom-center" : ""}}'>
         <i class="iconfont iconNav {{item.icon}}"></i>
         <text wx:if="{{item.center}}" class='content-background'></text>
@@ -8,7 +8,6 @@
       </view>
     </view>
 </view>
-
 
 
 

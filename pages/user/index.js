@@ -1,6 +1,6 @@
 
 
-import { wxPromisify } from '../../common/public.js';
+import { wxPromisify,wxShare } from '../../common/public.js';
 
 Page({
   data: {
@@ -62,6 +62,10 @@ Page({
       })
     })
 
+  },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
   },
   goRoute: function(e){
     const index = e.currentTarget.dataset.index;

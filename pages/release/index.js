@@ -3,7 +3,7 @@
 import { ARTICLEID } from '../../common/consts.js';
 import { addStick } from '../../common/path.js';
 import { getArrsort } from '../../common/getData.js';
-import { wxPromisify, wxShowToast, wxGetLocation, ajax, wxUploadImg } from '../../common/public.js';
+import { wxPromisify, wxShowToast, wxGetLocation, ajax, wxUploadImg,wxShare } from '../../common/public.js';
 
 
 
@@ -51,13 +51,16 @@ Page({
       this.setData({
         array: data.info
       })
-      console.log(this.data.array);
+      
     })
     .catch(data => {
-      console.log(data);
+      
     })
   },
-
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -153,7 +156,7 @@ Page({
       this.setData({
         location: res
       })
-      console.log(location);
+      
     })
     .catch( err => {
       this.getPosition.apply(this.getPosition);
@@ -202,17 +205,17 @@ Page({
                   url: '/pages/detail/index'
                 })
               } catch (e) {
-                console.log(e);
+                
               }
             }
         })
         .catch( err => {
-          console.log(err);
+         
         })
         
       })
       .catch( err => {
-        console.log(err);
+        
       })
     }
   }

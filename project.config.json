@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
-	"appid": "wxe05524fa065cb6f9",
-	"projectname": "xiaochengxu",
+	"appid": "你的微信小程序key",
+	"projectname": "progarm",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -30,5 +30,4 @@
 			"list": []
 		}
 	}
-  
 }

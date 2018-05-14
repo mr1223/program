@@ -1,6 +1,6 @@
 
 
-import { ajax, clearLink } from '../../common/public.js';
+import { ajax, clearLink, wxShare } from '../../common/public.js';
 import { dominImg, getToMyComment } from '../../common/path.js';
 import { repalceUploads } from '../../common/reg.js'
 
@@ -22,7 +22,10 @@ Page({
   onLoad: function (options) {
     this.created();
   },
-
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

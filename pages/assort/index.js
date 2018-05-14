@@ -1,5 +1,5 @@
 
-import { clearLink,ajax, repalceImgPublic, dominImgPublic } from '../../common/public.js';
+import { clearLink, ajax, repalceImgPublic, dominImgPublic, wxShare } from '../../common/public.js';
 import { dominImg, assortNewList, assortBarList }  from '../../common/path.js';
 import { repalceUploads, img_selects } from '../../common/reg.js'
 
@@ -43,6 +43,10 @@ Page({
       'id': id
     })
   },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   onReachBottom: function () {
     this.created(this.data.id, this.data.method);
   },
@@ -55,7 +59,7 @@ Page({
     }
     ajax(assortNewList,'',data)
     .then(data => {
-      console.log(data);
+      
       if (data.code == 1){
         var getData = data.info;
         

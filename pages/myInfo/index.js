@@ -1,5 +1,5 @@
 
-import { clearLink, addStyleImage, ajax } from '../../common/public.js';
+import { clearLink, addStyleImage, ajax,wxShare } from '../../common/public.js';
 import { dominImg, aboutMessage } from '../../common/path.js';
 import { repalceUploads } from '../../common/reg.js';
 
@@ -10,6 +10,10 @@ Page({
   onLoad: function(){
     this.getData();
   },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   getData: function(){
     ajax(aboutMessage)
     .then( data => {
@@ -19,7 +23,7 @@ Page({
         this.setData({
           nodes: content
         })
-        console.log(content);
+        
     })
     .catch( err => {
 

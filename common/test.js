@@ -24,17 +24,17 @@ const authorize = (setting) => () => {
 
 
 async function test() {
-  console.log('eee');
+  
   try {
     await authUserInfo()
-    console.log('yes')
+    
   } catch (error) {
-    console.log('no')
+    
   }
 }
 
 const tg = data => {
   
-    console.log('ddd');
+    
  
 }

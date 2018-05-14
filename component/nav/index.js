@@ -1,6 +1,5 @@
 Component({
   data: {
-    indicatorDots: true,
     autoplay: false,
     interval: 5000,
     duration: 1000,
@@ -10,7 +9,14 @@ Component({
     list: {
       type: Object,
       value: {}
+    },
+    indicatorDots: {
+      type: Boolean,
+      value: true
     }
+  },
+  ready: function(){
+    
   },
   methods: {
     goRoute: function(e){

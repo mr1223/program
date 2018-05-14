@@ -1,4 +1,4 @@
-import { clearLink,ajax } from '../../common/public.js';
+import { clearLink,ajax,wxShare } from '../../common/public.js';
 import { dominImg, getUserNewList } from '../../common/path.js';
 import { repalceUploads, img_selects } from '../../common/reg.js';
 Page({
@@ -11,6 +11,10 @@ Page({
   },
   onLoad: function(){
     this.getList();
+  },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
   },
   onReachBottom: function () {
     this.getList();

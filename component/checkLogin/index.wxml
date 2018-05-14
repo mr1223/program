@@ -1,0 +1,28 @@
+
+<view class='checklogin {{status ? "checkStatus": ""}}'>
+    <view class='checklogin-content'>
+      <!-- <i bindtap="cancel" class='iconfont icon-guanbi'></i> -->
+      <view class='checklogin-image'>
+        <image mode="aspectFit" src='../../lib/style/image/grant.png'></image>
+      </view>
+      <text class='checklogin-title'>此操作需要您授权个人信息！ </text>
+      <view class='checklogin-btn'>
+        <button bindtap='sure' bindgetuserinfo='getUserInfo' lang='zh_CN' class='checklogin-sure' open-type='getUserInfo'>确认授权</button>
+      </view>
+    </view>
+    <view class='checklogin-mask'></view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

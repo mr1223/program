@@ -1,5 +1,5 @@
 //app.js
-// var aldstat = require('./utils/ald-stat.js');
+ //var aldstat = require('./utils/ald-stat.js');
 const consts = require('/common/consts.js');
 
 App({
@@ -28,6 +28,6 @@ App({
   },
  
   sendCode: (data) =>{
-    console.log(data);
+    
   }
 })

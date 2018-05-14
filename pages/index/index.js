@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
-const app = getApp()
-console.log(app);
+const app = getApp();
+
 import { dominImg, accountIndex, getCarouselList, getIndexNewBar, getIndexNewList, repalceImgPublic, dominImgPublic, getMessage} from '../../common/path.js';
 import { clearLink, ajax, wxPromisify, checkScope, wxShare  } from '../../common/public.js';
 import { getUserMessage, getUser} from '../../common/login.js' //
@@ -29,12 +29,14 @@ Page({
     navList: [
 
     ],
+    indicator: true,
     trumpet: '',
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    indicatorActiveColor: "#fff"
+    indicatorActiveColor: "#fff",
+    checkStatus: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -76,7 +78,7 @@ Page({
       })
     }
 
-
+    
 
 
   },
@@ -107,32 +109,41 @@ Page({
 
     ajax(getCarouselList, 'get').then(data => {
       if (data.code == 1) {
+        var indicatorDots = true;
         var imgUrls = [];
         var getData = data.info;
+        if (getData.length < 2){
+          indicatorDots = false;
+        }
         getData.forEach(function (element) {
           element['image_src'] = clearLink(repalceUploads, element['image_src'], dominImg);
           imgUrls.push(element['image_src']);
         })
         this.setData({
+          indicatorDots: indicatorDots,
           imgUrls: imgUrls
         })
       }
     })
     .catch(err => {
-      console.log(err);
+      
     })
     
   },
   getArrost: function(){
     getArrsort()
     .then( data => {
-     
+        var indicator = true;
+        if(data.list.length < 2){
+          indicator = false;
+        }
         this.setData({
+          indicator: indicator,
           navList: data.list
         })
     })
     .catch( data => {
-      console.log(data);
+      
     })
   },
   getNewBar: function(){
@@ -165,7 +176,7 @@ Page({
         }
     })
     .catch( err => {
-        console.log(err);
+       
     })
     
   },
@@ -212,26 +223,14 @@ Page({
       }
     })
     .catch(err => {
-      console.log(err);
+      
     })
   },
   getUserMessage: function(){
-    // checkScope('scope.userLocation')
-    // .then(res => {
-    //     console.log(res);
-    // })
-    // .catch(err => {
-    //   console.log(err);
-    // })
-    // return;
+   
     getUserMessage()
     .then(res => {
-     
-      // if (res.status == -1){
-      //     this.getUserMessage.apply(this.getUserMessage);
-      //   }else{
-      //     console.log(res);
-      //   }
+    
     })
     .catch(err => {
       
@@ -259,17 +258,13 @@ Page({
     .catch(err => {
 
     })
-  }
-  // onPageScroll: function(e){
-  //   if (e.scrollTop > 110){
-  //     this.setData({
-  //       searchActive: true
-  //     })
-  //   }else{
-  //     this.setData({
-  //       searchActive: false
-  //     })
-  //   }
+  },
+  shows: function(e){
+    this.setData({
+      checkStatus: true
+    })
+
     
-  // }
+  }
+
 })

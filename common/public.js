@@ -31,10 +31,10 @@ const ajax = (url,method,data) => {
           })
           login().then(res => {
 
-            console.log(res);
+            
           })
         .catch(err => {
-          console.log(err);
+          
 
         })
         } else {
@@ -154,7 +154,7 @@ const openSetting = (scope) => {
   return new Promise(function (resolve, reject) {
     wx.openSetting({
       success: (res) => {
-        console.log();
+       
         if (res.authSetting[scope]) {
           resolve(res)
         } else {
@@ -301,7 +301,7 @@ const wxShare = (title,path,imageUrl) => {
       if (res.errMsg == 'shareAppMessage:ok'){
         wxShowToast('分享成功');
       }
-      console.log(res);
+      
       
     },
     fail: function (err) {

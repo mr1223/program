@@ -32,7 +32,7 @@ const getArrsort = () => {
       }
     })
     .catch(err => {
-      console.log(err);
+      
     })
   })
 }

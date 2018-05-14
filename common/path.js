@@ -1,9 +1,9 @@
 
 
-const domin = 'http://你的地址';
-const dominImg = 'http://你的地址/Uploads';
+const domin = '你的地址';
+const dominImg = '你的地址/Uploads';
 const repalceImg = /\/Uploads/g;
-const dominImgPublic = 'http://你的地址/Public';
+const dominImgPublic = '你的地址/Public';
 const repalceImgPublic = /\/Public/g;
 const accountIndex = domin + '/Home/Account/index';//用户信息
 const getCarouselList = domin + '/Home/Index/getCarouselList';//获取-轮播图列表

@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import { wxShare } from '../../common/public.js';
 Page({
   data: {
     motto: 'Hello World',
@@ -103,8 +103,12 @@ Page({
       })
     }
   },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   getUserInfo: function(e) {
-    console.log(e)
+  
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

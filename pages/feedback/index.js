@@ -1,5 +1,5 @@
 
-import { ajax, wxShowToast } from '../../common/public.js';
+import { ajax, wxShowToast,wxShare } from '../../common/public.js';
 import { addFeedback } from '../../common/path.js';
 
 
@@ -18,7 +18,10 @@ Page({
   onLoad: function (options) {
     
   },
-
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

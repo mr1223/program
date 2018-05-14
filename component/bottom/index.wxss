@@ -13,9 +13,10 @@
   
 }
 .bottom-nav {
+  position: relative;
   float: left;
   padding-top: 12rpx;
-  width: 20%;
+  width: 33.3%;
   text-align: center; 
   font-size: 30rpx;
   color:#666;
@@ -52,10 +53,11 @@
 .bottom-center .content-text {
   color:#333;
 }
+
 .bottom-center .iconNav {
   display: block;
   position: absolute;
-  left:35rpx;
+  left: 79rpx;
   margin-top: -43rpx;
   color:#ff6384;
   font-size: 94rpx;
@@ -77,8 +79,6 @@
   position:relative;
   top:58rpx;
 }
-
-
 
 
 

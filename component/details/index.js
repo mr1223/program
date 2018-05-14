@@ -100,7 +100,7 @@ Component({
         }
       })
       .catch(err => {
-        console.log(err);
+       
       })
     },
     addArtPraise(e){
@@ -139,7 +139,7 @@ Component({
         }
       })
       .catch(err => {
-        console.log(err);
+        
       })
     },
     addCommentPraise(e){
@@ -188,7 +188,7 @@ Component({
         }
       })
       .catch(err => {
-        console.log(err);
+       
       })
     }
   }

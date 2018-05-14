@@ -1,4 +1,4 @@
-import { clearLink, ajax, addStyleImage } from '../../common/public.js';
+import { clearLink, ajax, addStyleImage,wxShare } from '../../common/public.js';
 import { dominImg, getdeatil, dominImgPublic } from '../../common/path.js';
 import { ARTICLEID } from '../../common/consts.js'; 
 import { repalceUploads, repalcePublic, img_selects} from '../../common/reg.js'
@@ -15,6 +15,10 @@ Page({
   },
   onLoad: function(){
     this.getList();
+  },
+  onShareAppMessage: (res) => {
+    const share = wxShare();
+    return share;
   },
   getList: function(){
     try {
@@ -75,7 +79,7 @@ Page({
       })
 
     } catch (e) {
-      console.log(e);
+      
     }
 
     

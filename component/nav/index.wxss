@@ -1,3 +1,5 @@
+@import '/lib/style/css/iconfont/iconfont.wxss';
+
 swiper {
   height: 340rpx;
 }
@@ -15,10 +17,19 @@ swiper {
 }
 .content-image {
   margin: 0 auto;
+  margin-bottom: 8rpx;
   width: 100rpx;
   height: 100rpx;
-  border-radius: 50%;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50rpx;
   overflow: hidden;
+  background: #ff6384;
+  color: #fff;
+}
+.iconfont  {
+  display: block;
+  font-size: 70rpx;
 }
 .content-image image {
   max-width: 100%;

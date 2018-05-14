@@ -2,7 +2,8 @@
   "usingComponents": {
     "bottom": "/component/bottom/index",
     "nav": "/component/nav/index",
-    "card": "/component/card/index"
+    "card": "/component/card/index",
+    "checkLogin": "/component/checkLogin/index"
   },
   "navigationBarTitleText": "天通圈子"
 }

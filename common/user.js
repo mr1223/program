@@ -157,7 +157,7 @@ const getLogin = data => {
 	        resolve(res);
 	      },
 	      fail: err => {
-          console.log(res);
+         
 	        reject(err);
 	      }
 	    })
@@ -235,7 +235,7 @@ const openSetting = () => {
   	return new Promise(function (resolve, reject) {
 	    wx.openSetting({
 	      	success: (res) => {
-            console.log(res);
+            
 		        if (res.authSetting['scope.userInfo']){
 		          resolve(res)
 		        }else{

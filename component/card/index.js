@@ -23,7 +23,7 @@ Component({
           url: '/pages/detail/index'
         })
       } catch (e) {
-        console.log(e);
+        
       }
       
     }
